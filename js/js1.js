@@ -1,0 +1,1 @@
+var saludo = window.prompt("Bienvenido Extraño")
