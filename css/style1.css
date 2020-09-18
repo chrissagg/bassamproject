@@ -22,15 +22,18 @@ img{
     font-size: 30px;
     margin: 10px;
     font-family: Cambria;
-    /*color: snow;*/ 
+    color: snow;
+
 }
 .banner{
     height: 50vh;
     position: relative;
-    background: url('../img/');
+    margin-top: -60px;
+    background: url('../img/pexels-photo-2004161.jpeg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+
 }
 .banner__descripcion{
     position: absolute; /*indico que se posicione dentro del .banner (ya que el mismo tiene una position: relative)*/
@@ -49,8 +52,73 @@ img{
     padding: 12px;
     color: #fff;
     font-size: 20px;
+
 }
 .button__banner:hover{
     border: 2px solid #9cc76d;
     background: none;
+}
+.galeria h1{
+    font-size: 20px;
+    text-align: center;
+
+}
+.galeria{
+    margin: 20px;
+
+}
+.team h2{
+    font-size: 40px;
+    text-align: center;
+}
+.team{
+    background: #f6f6f6;
+    padding: 30px;
+}
+.team__columna img{
+    border-radius: 50%;
+}
+.team p{
+    text-align: justify;
+}
+.info h1{
+    color: #9cc76d;
+    font-size: 30px;
+}
+.team{
+    display: grid;
+    grid-gap:30px;
+}
+.info{
+    text-align: center;
+}
+.info__columna{
+    margin: 20px;
+}
+.info .contenedor{
+    display: grid;
+    grid-gap: 10px;
+}
+
+.banner2 {
+    height: 50vh;
+    color: #f6f6f6;
+    position: relative;
+    background: url('../img/pexels-photo-2004161.jpeg');
+    background-size: cover;
+    background-position: left;
+    background-attachment: fixed;
+}
+.banner2 h1{
+    font-size: 28px;
+    text-align: center;
+}
+
+.banner2__descripcion {
+    position: absolute; /*quiero que este dentro del banner*/
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
 }
