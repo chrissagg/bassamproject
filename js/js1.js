@@ -1,1 +1,2 @@
-var saludo = window.prompt("Bienvenido Extraño")
+//alert("Bienvenido Extraño");
+
