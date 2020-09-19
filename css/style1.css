@@ -6,15 +6,38 @@ body{
 *{
     font-family: sans-serif;
 }
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
 .contenedor{
     width: 100%;
     margin: auto;
 }
-.navTop {
-    text-align: right;
 
-
+/* Nav Styling */
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    
 }
+.nav-ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    list-style-type: none;
+}
+.nav-ul li a {
+    display: inline-block;
+    color: black;
+    font-family: sans-serif;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
 img{
     width: 100%;
 }
@@ -77,7 +100,7 @@ img{
     text-align: center;
 }
 .team{
-    background: #f6f6f6;
+    background: #8f8d8d;
     padding: 30px;
 }
 .team__columna img{
@@ -131,12 +154,28 @@ img{
     transform: translateX(-50%) translateY(-50%);
     text-align: center;
 }
+.about{
+    background: #f6f6f6;
+    padding: 30px;
+    
+}
+.about h2{
+    text-align: center;
+}
+.about p{
+    text-align: center;
+    position: relative;
+}
+
 .footer{
-    background: crimson;
+    background: rgb(204, 49, 80);
     color: darkgray;
     text-align: center;
     padding: 10px;
 }
+
+
+
 @media(min-width:520px){
     .banner h1{
         font-size: 30px;
