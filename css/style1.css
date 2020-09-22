@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap');
+/*  font-family: 'Cairo', sans-serif; */
 body{
     box-sizing: border-box;
     margin: 0px;
@@ -6,63 +8,85 @@ body{
 *{
     font-family: sans-serif;
 }
-
+/*
 a:link, a:visited, a:active {
     text-decoration:none;
-}
+}*/
+
 .contenedor{
     width: 100%;
     margin: auto;
 }
 
-/* Nav Styling */
-.nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
+header {
+    margin: auto;
     
 }
+
+
+/* Nav Styling */
+
+.contenedor2{
+    display: grid;
+    align-items: left;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    height: 0px;
+
+}
+
+.logo{
+    font-weight: 800;
+    font-size: 30px;
+    text-align: left;
+    font-family: Cambria;
+    color: rgb(255, 255, 255);
+    height: auto;
+    margin-top: 5px;
+    margin-bottom: 0;
+    z-index: 500;
+   
+}
+.navBar{
+    z-index: 600;
+    text-align: end;
+    
+    
+}
+
+
 .nav-ul{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    list-style-type: none;
+    align-items: ;
+    display: inline;
+    
+    
 }
-.nav-ul li a {
+.nav-ul li  {
     display: inline-block;
-    color: black;
-    font-family: sans-serif;
-    padding: 10px 20px;
-    text-decoration: none;
+    font-weight: 500;
+    font-size: 19px;
+    padding: 10px;
+    font-family:'Cairo', sans-serif;
 }
+a {
+    text-decoration: none;
+    color: #c8ff00
+  }
 
 img{
     width: 100%;
 }
-.header__contenido{
-    position: relative;
-    z-index: 100;
-}
-.logo{
-    font-weight: 900;
-    font-size: 30px;
-    margin: 10px;
-    font-family: Cambria;
-    color: snow;
-
-}
 .banner{
-    height: 50vh;
+    height: 110vh;
     position: relative;
-    margin-top: -60px;
+    margin-top: -69px;
     background: url('/img/pexels-photo-2004161.jpeg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 
 }
+
 .banner__descripcion{
     position: absolute; /*indico que se posicione dentro del .banner (ya que el mismo tiene una position: relative)*/
     text-align: center;
@@ -74,6 +98,7 @@ img{
     font-size: 15px;
     margin-top: 25px;
 }
+
 .button__banner{
     background: #9cc76d;
     border: none;
@@ -82,51 +107,76 @@ img{
     font-size: 20px;
 
 }
+
 .button__banner:hover{
     border: 2px solid #9cc76d;
     background: none;
 }
+
 .galeria h1{
-    font-size: 20px;
+    font-size: 60px;
+    margin-top: 0;
+    margin-bottom: 125px;
     text-align: center;
+    color: #f6f6f6;
+    padding-top: 150px;
 
 }
+
 .galeria{
-    margin: 20px;
+    margin: 0px;
+    background-color: #0e0f0f;
 
 }
-.team h2{
+
+.news h2{
     font-size: 40px;
     text-align: center;
 }
-.team{
-    background: #8f8d8d;
-    padding: 30px;
+
+.news{
+    background: #ffe815;
+
+    padding: 50px;
 }
-.team__columna img{
-    border-radius: 50%;
+
+.news__columna img{
+    border-radius: 60%;
+    
+   
+    
 }
-.team p{
-    text-align: justify;
+
+.news p{
+    text-align: center;
+    margin-top: 40px;
 }
-.team__grid{
+
+.news__grid{
     display: grid;
     grid-gap: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
+
 .info h1{
     color: #9cc76d;
     font-size: 30px;
 }
-.team{
+
+.news{
     display: grid;
     grid-gap:30px;
 }
+
 .info{
     text-align: center;
 }
+
 .info__columna{
     margin: 20px;
 }
+
 .info .contenedor{
     display: grid;
     grid-gap: 10px;
@@ -134,13 +184,14 @@ img{
 
 .banner2 {
     height: 50vh;
-    color: #f6f6f6;
+    color: #59be05;
     position: relative;
     background: url('/img/h310-a-pro-cooling-3840.jpg');
     background-size: cover;
     background-position: left;
     background-attachment: fixed;
 }
+
 .banner2 h1{
     font-size: 28px;
     text-align: center;
@@ -154,54 +205,61 @@ img{
     transform: translateX(-50%) translateY(-50%);
     text-align: center;
 }
+
 .about{
     background: #f6f6f6;
     padding: 30px;
     
 }
+
 .about h2{
     text-align: center;
 }
+
 .about p{
     text-align: center;
     position: relative;
 }
 
 .footer{
-    background: rgb(204, 49, 80);
+    background: black;
     color: darkgray;
     text-align: center;
     padding: 10px;
 }
 
 
-
 @media(min-width:520px){
     .banner h1{
         font-size: 30px;
+    }
+    .header__contenido{
+        display: grid;
+        grid-template-columns: 1fr 1fr
     }
     .grid {
         display: grid;
         grid-gap: 10px;
         grid-template-columns: repeat(2,1fr);
     }
-    .team .team__grid {
+    .news .news__grid {
         grid-template-columns: repeat(2,1fr);
     }
     .info .contenedor{
         grid-template-columns: repeat(3,150px);
         justify-content: space-around; /* se estira para completar el espacio abarcando todo el ancho*/
     }
-    .banner2 h1{
+    .banner2 h2{
         font-size: 50px;
+        color: blanchedalmond;
     }
     .banner2 p{
         font-size: 50px;
     }
 }
-@media(min-width:728px){
-    .team .team__grid {
-        grid-template-columns: repeat(2,480px);
+@media(min-width:720px){
+    .news .news__grid {
+        grid-template-columns: repeat(2,1fr);
         justify-content: space-around;
     }
 }    
