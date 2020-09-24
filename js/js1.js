@@ -7,3 +7,9 @@ function redirect(onClick){
 function redirect2(onClick){
     window.open("https://www.instagram.com/itecharg.shop/")
 }
+
+//NAV ANIMATION
+window.addEventListener("scroll",function(){
+    var header = document.querySelector("header");
+    header.classList.toggle("sticky", window.scrollY > 0)
+})
