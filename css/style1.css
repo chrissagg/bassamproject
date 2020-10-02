@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap');
 /*  font-family: 'Cairo', sans-serif; */
+
+
 body{
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
 }
 *{
-    font-family: sans-serif;
+    font-family: 'Cairo', sans-serif; 
 }
 /*
 a:link, a:visited, a:active {
@@ -32,46 +34,72 @@ header {
     transition: 0.6s;
     padding: 40px 100px;
     z-index: 1000;
+    box-sizing: border-box;
 }
 header.sticky,
 header.sticky{
     padding: 5px 100px;
     background: rgba(255, 255, 255, 0.548);
 }
+.container {
+    width: 100%;
+}
 
 header .logo{
     position: relative;
-    font-weight: 700;
-    color: #c8ff00;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.219)/*#c8ff00*/;
     text-decoration: none;
-    font-size: 2em;
-    text-transform: uppercase;
+    font-size: 25px;
+    font-family: 'Patua One', cursive;
     letter-spacing: 2px;
     transition: 1.5s;
 }
 
-header ul{
-    position: relative ;
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.nav-ul{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
 }
 
-header ul li {
-    position: relative;
-    list-style: none;
-    
-}
 
-header ul li a {
-    position: relative;
-    margin: 0 15px;
+.nav-ul li a {
+    display: inline-block;
+    color: rgba(255, 255, 255, 0);
+    font-family: 'raleway','sans-serif';
+    padding: 10px 20px;
     text-decoration: none;
-    color: #c8ff0000; /* #c8ff00 */
     letter-spacing: 2px;
     font-weight: 500px;
     transition: 0.6s;
-  }
+    cursor: pointer;
+}
+
+.hamburguer {
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+.hamburguer:focus {
+    outline: none;
+
+}
 
 header.sticky ul li a {
     color: #000;
@@ -92,6 +120,7 @@ img{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+  
 
 }
 
@@ -113,16 +142,19 @@ img{
     padding: 12px;
     color: #fff;
     font-size: 20px;
+    outline: none;
 
 }
 
 .button__banner:hover{
     border: 2px solid #9cc76d;
     background: none;
+    padding: 10px; /*le pongo para evitar desplazamiento del contenedor*/
 }
 
 
 
+/*------------GALERIA----------------*/
 
 .galeria h1{
     font-size: 60px;
@@ -131,6 +163,8 @@ img{
     text-align: center;
     color: #f6f6f6;
     padding-top: 150px;
+    font-family: 'Patua One', cursive;
+    font-weight: 400;
 
 }
 
@@ -140,6 +174,8 @@ img{
 
 }
 
+
+/*--------------POST & NEWS ----------------*/
 .news h2{
     font-size: 40px;
     text-align: center;
@@ -170,6 +206,7 @@ img{
     margin-bottom: 50px;
 }
 
+/*---------STADISTICS---------*/
 .info h1{
     color: #9cc76d;
     font-size: 30px;
@@ -185,7 +222,7 @@ img{
 }
 
 .info__columna{
-    margin: 20px;
+    margin: 10px;
 }
 
 .info .contenedor{
@@ -193,9 +230,19 @@ img{
     grid-gap: 10px;
 }
 
+
+
+/*--------------SPONSOR--------------*/
+.contenedor2{
+    background-color: rgba(14, 10, 26, 0.671);
+    width: 50%;
+    margin: auto;
+    height: 300px;
+    border-radius: 10px;
+}
+
 .banner2 {
     height: 50vh;
-    color: #59be05;
     position: relative;
     background: url('/img/h310-a-pro-cooling-3840.jpg');
     background-size: cover;
@@ -206,6 +253,11 @@ img{
 .banner2 h1{
     font-size: 28px;
     text-align: center;
+    color: #ffe815;
+}
+
+.banner2 p {
+    color: rgb(255, 255, 255);
 }
 
 .banner2__descripcion {
@@ -216,6 +268,10 @@ img{
     transform: translateX(-50%) translateY(-50%);
     text-align: center;
 }
+
+
+
+/*-----------ABOUT-----------------------*/
 
 .about{
     background: #f6f6f6;
@@ -232,16 +288,63 @@ img{
     position: relative;
 }
 
+
+
+/*-----------------FOOTER----------------*/
 .footer{
     background: black;
     color: darkgray;
     text-align: center;
-    padding: 10px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+
+#navFoot > a{
+    text-decoration: none;
+    color: #fff;
+    padding: 0px 25px;
+
 }
 
 
+
+
+
+
+
+
+
+
+/*---------MEDIA-----------------------*/
+
+@media screen and (max-width:767px) {
+    .nav-ul {
+        display: inline-block;
+        flex-direction: column;
+        width: 100%;
+        margin: 0px;
+        padding: -5px;
+
+    }
+
+    .nav-ul.show {
+        display: flex;
+    }
+    .hamburguer {
+        display: block;
+    }
+    .banner2 h2{
+        font-size: auto;
+        color: blanchedalmond;
+        font-weight: 400;
+    }
+
+
+}
+
 @media(min-width:520px){
-    .banner h1{
+   .banner h1{
         font-size: 30px;
     }
     .header__contenido{
@@ -265,14 +368,19 @@ img{
         color: blanchedalmond;
     }
     .banner2 p{
-        font-size: 50px;
+        font-size: 25px;
     }
+
+
 }
 @media(min-width:720px){
     .news .news__grid {
         grid-template-columns: repeat(2,1fr);
         justify-content: space-around;
     }
+
+
+
 }    
 @media(min-width:1024px){
     .contenedor {
@@ -296,4 +404,6 @@ img{
         font-size: 30px;
 
     }
+
+
 }

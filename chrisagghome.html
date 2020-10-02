@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <!-------links---------->
     <link rel="stylesheet" href="css/style1.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
     <!----scripts------->
     <!--  <script src="js/js1.js"></script> --> 
 
@@ -20,15 +20,21 @@
      <!-------------HEADER--------------->
 
     <header>
-        <a href="#" class="logo">CHRIS AGG</a>
-        
-        <ul>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">Chris Agg</a>
+                <button class="hamburguer" id="hamburguer">
+                <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-ul" id="nav-ul">
             
-            <li><a href="#">I'm</a></li>
-            <li><a href="#">Reels</a></li>
-            <li><a href="#">Creative</a></li>
+                 <li><a href="#Im">I'm</a></li>
+                 <li><a onclick="redirectNav()">Reels</a></li>
+                 <li><a href="#creative">Creative</a></li>
             
-        </ul>
+                </ul>
+            </nav>
+        </div>
     
     </header>
 
@@ -49,7 +55,7 @@
 
 
     <!-------GALERIA--------->
-    <section class="galeria">
+    <section class="galeria" id="creative"> 
         <div class="contenedor">
             <h1>Some Screens</h1>
             <article class="grid">
@@ -115,7 +121,7 @@
     <!---------BANNER 2 ----------->
     <section class="banner2">
         <div class="banner2__descripcion">
-            <div class="contenedor">
+            <div class="contenedor2">
                 <h2>Sale:::::Now!</h2>
                 <p>If you are in the Latin American region, don't forget to take advantage of the best offers in hardware and technology. Visit my sponsor!</p>
                 <input type="button" value="Go to shop" onclick="redirect2()" class="button__banner">
@@ -135,7 +141,7 @@
 
 
     <!------------FOOTER-------------->
-    <footer class="footer">
+    <footer class="footer" id="Im">
         <div class="contenedor">
             <nav id="navFoot">
              <a href="#">ABOUT</a>
