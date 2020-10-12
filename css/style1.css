@@ -87,6 +87,11 @@ nav {
     cursor: pointer;
 }
 
+.nav-ul li a:hover{
+    background-color: black;
+    color: blanchedalmond;
+}
+
 .hamburguer {
     background-color: transparent;
     border: 0;
@@ -288,6 +293,24 @@ img{
     position: relative;
 }
 
+.about .cv{
+    margin: auto;
+    text-align: center;
+    /*background-image: url('/img/CVChrisAgg-big.png');*/
+    /*background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;*/
+    height: 1000px;
+    width: 700px;
+}
+
+
+.about .cv a img{
+    height: 1000px;
+    width: auto;
+    background-size: cover;
+
+}
 
 
 /*-----------------FOOTER----------------*/
@@ -306,8 +329,6 @@ img{
     padding: 0px 25px;
 
 }
-
-
 
 
 

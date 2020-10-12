@@ -9,7 +9,7 @@ function redirect2(onClick){
 }
 
 function redirectNav(onClick){
-    window.open("https://www.instagram.com/chriss.agg/")
+    window.open("https://github.com/chrissagg")
 }
 
 //NAV ANIMATION
